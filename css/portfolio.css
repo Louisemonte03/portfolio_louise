@@ -1,0 +1,83 @@
+.introduction {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr;
+gap: 1em;
+
+margin: 5em;
+
+}
+
+
+
+.introduction h2 {
+grid-column: 1/2;
+grid-row: 1/2;
+font-size: 3em;
+color: black;
+}
+
+.introduction h3 {
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 1.8em;
+    line-height: 2em;
+    color: black;
+}
+
+
+.introduction p:nth-of-type(1) {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    line-height: 2.5em;
+    color: rgb(141, 141, 141);
+}
+
+.introduction p:nth-of-type(2) {
+    grid-column: 3/3;
+    grid-row: 2/3;
+    line-height: 2.5em;
+    color: rgb(141, 141, 141);
+}
+.introduction p:nth-of-type(3) {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    color: black;
+font-weight: bold;
+}
+
+.introduction img {
+    width: 20em;
+  
+}
+.introduction a {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+
+}
+
+.introduction  a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    top: 25px; 
+    width: 0;
+    height: 1px;
+    background-color: currentColor; 
+    transition: width 0.5s ease;
+    border-radius: 2em;
+}
+
+.introduction  a:hover::after {
+    width: 100%; 
+}
+
+
+
+.zelf-portret img {
+    width: 5em;
+display: flex;
+}

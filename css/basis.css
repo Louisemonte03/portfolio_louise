@@ -1,0 +1,201 @@
+
+
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F3F3F3;
+    
+}
+
+h1 {
+    font-size: 80px;
+}
+
+
+
+
+header nav a {
+    position: relative; 
+    text-decoration: none; 
+    color: inherit;
+}
+
+header nav a::after {
+    content: '';
+    position: absolute;
+    top: 20px; 
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1.2px;
+    background-color: black; 
+    transition: width 0.6s ease; 
+    border-radius: 2em;
+}
+
+header nav a:hover::after {
+    width: 100%; 
+}
+
+
+
+
+
+
+
+
+.midden {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh; 
+    text-align: left; 
+    font-family: Arial, sans-serif;
+}
+
+.header-text p:nth-of-type(1) {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    font-size: 15px;
+color: black;
+}
+
+h1 {
+    position: relative;
+    left: -100%;
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        left: 0;
+    }
+}
+
+
+
+
+.header-text p:nth-of-type(2) {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 15px;
+   color: black;
+}
+
+
+
+header nav {
+    position: absolute;
+    top: 10px;
+    right: 50px;
+}
+header ul {
+    display: flex;
+    gap: 2em;
+    justify-content: flex-end;
+}
+
+header ul li {
+ list-style: none;
+}
+header ul li a {
+    list-style: none;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
+
+.footer-nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 2rem 4rem; 
+    border-top: 1px solid rgb(172, 172, 172); 
+    margin-left: 5em;
+    margin-right: 5em;
+
+}
+
+.footer-nav article {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; 
+}
+
+.footer-nav img {
+    width: 100px; 
+    height: 100px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+}
+
+.footer-nav h4 {
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color:#505050
+}
+
+.footer-nav li {
+    list-style: none;
+    margin-bottom: 0.25rem;
+    color:#9d9d9d;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color:#9d9d9d;
+    font-size: 0.9rem;
+}
+
+.footer-nav p {
+    font-size: 1rem;
+    color:#9d9d9d;
+    margin-top: 0.5rem;
+
+}
+
+
+.footer-nav ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+}
+
+
+
+/* project gid*/
+
+.all-projects img{
+    width: 100%;
+}
+
+.all-projects{
+  margin: 5em;
+}
+
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #524235;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+margin-bottom: 2em;
+margin-left: 5em;
+    transition: background-color 0.5s;
+}
+
+.download-button:hover {
+    background-color: #3b2e24;
+}

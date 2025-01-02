@@ -1,0 +1,71 @@
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    color: white;
+}
+.contact img{
+    width: 100%;
+
+}
+
+.contact article:nth-of-type(1){
+    grid-column: 1/2;
+
+}
+.contact div {
+margin-left: 5em;
+margin-top: 5em;
+
+}
+
+.contact h2 {
+    color: rgb(19, 19, 19);
+    margin-bottom: 1em;
+    font-size: 4rem;
+    font-weight: bold;
+    color:#505050;
+}
+
+.contact h3 {
+    font-size: 15px;
+    color: rgb(71, 71, 71);
+    font-weight: lighter;
+    letter-spacing: 2px;
+
+    
+}
+
+.contact p{
+    color: rgb(187, 187, 187);
+    font-size: 15px;
+}
+
+
+.cv-button article{
+    display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 5em;
+
+
+}
+.cv-button h2{
+    font-size: 35px;
+    color: rgb(71, 71, 71);
+}
+.cv-button{
+    margin-bottom: 5em;
+    line-height: 2.5em;
+margin: 5em;
+}
+
+.download-button-cv{
+    background-color: #505050;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    font-style: none;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
