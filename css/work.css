@@ -123,4 +123,7 @@ font-size: 2em;
 .projects article:nth-of-type(5){
   grid-column: 3/5;
 }
+.projects article:nth-of-type(6){
+  grid-column: 1/3;
+}
 
