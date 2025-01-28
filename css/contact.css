@@ -1,49 +1,3 @@
-.contact {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-   
-    color: white;
-}
-.contact img{
-    width: 100%;
-
-}
-
-.contact article:nth-of-type(1){
-    grid-column: 1/2;
-}
-
-.contact article:first-of-type{
-    margin: 3em;
-}
-
-.contact div article:first-of-type{
-    margin: 0;
-}
-
-.contact h2 {
-    color: rgb(19, 19, 19);
-    margin-bottom: 1em;
-    margin-top: 2em;
-    font-size: 4rem;
-    font-weight: bold;
-    color:#505050;
-}
-
-.contact h3 {
-    font-size: 15px;
-    color: rgb(71, 71, 71);
-    font-weight: lighter;
-    letter-spacing: 2px;
-
-    
-}
-
-.contact p{
-    color: rgb(187, 187, 187);
-    font-size: 15px;
-}
-
 
 .cv-button article{
     display: grid;
@@ -75,4 +29,74 @@ margin: 5em;
 
 .cv-button p {
     color: #929292;
+}
+
+.contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact h2 {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    margin-top: -0.5em;
+    color: rgb(71, 71, 71);
+}
+
+.contact p {
+    font-size: 1.2rem;
+    max-width: 500px;
+    line-height: 1.5;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article h3 {
+    font-size: 1rem;
+
+    color: rgb(71, 71, 71);
+    margin-bottom: 5px;
+}
+
+article p {
+    font-size: 1.2rem;
+    color: #9b9b9b;
+}
+
+article a {
+    font-size: 1.2rem;
+ color: black;
+    text-decoration: none;
+    margin-top: 1em;
+
+}
+
+@media (max-width: 768px) {
+    .info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact h2 {
+        font-size: 2.5rem;
+    }
+
+    .contact p {
+        font-size: 1rem;
+    }
 }
