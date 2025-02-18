@@ -1,6 +1,6 @@
 .werk li {
 list-style: none;
-color: white;
+color: #fef5df;
 letter-spacing: 3px;
  }
 
@@ -33,7 +33,7 @@ letter-spacing: 3px;
 
 
 .werk {
-    background-color: rgb(19, 19, 19);
+    background-color:#ba181b;
 margin: 2em;
 border-radius: 2em;
 padding-bottom: 3em;
@@ -44,7 +44,7 @@ text-align: center;
 }
 
 .werk p:nth-of-type(1){
-    color: rgb(164, 164, 164);
+    color: #fef5df;
  font-weight: lighter;
     letter-spacing: 8px;
     padding-top: 4em;
@@ -53,7 +53,7 @@ text-align: center;
 
 
 .werk p:nth-of-type(2) {
-    color: rgb(164, 164, 164);
+  color: #fef5df;
     font-weight: lighter;
     margin-bottom: 2em;
     letter-spacing: 8px;
@@ -95,9 +95,14 @@ font-size: 2em;
     list-style: none;
  margin: 2em;
  margin-top: 10em;
+ color: #ba181b;
 
   }
 
+  .projects p{
+    color: #e5383b; 
+
+  }
 
 .projects article:nth-of-type(1){
   grid-column: 1/3;
